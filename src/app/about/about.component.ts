@@ -41,6 +41,27 @@ export class AboutComponent {
     }
 
 
+    onReadDoc() {
+        this.db.doc('/courses/4NGFuPlQbWqUCGq0wGYc').get()
+            .subscribe(snap => {
+                console.log(snap.id);
+                console.log(snap.data());
+            });
+    }
+
+    onReadCollection() {
+        this.db.collection(
+            '/courses/AssCOk26OvBs1ApxxV9p/lessons',
+            ref => ref.where('seqNo', '==', 1)
+            ).get()
+            .subscribe(snaps => {
+                snaps.forEach(snap => {
+                    console.log(snap.id);
+                    console.log(snap.data());
+                });
+            });
+    }
+
 }
 
 

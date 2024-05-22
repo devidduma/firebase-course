@@ -4,8 +4,16 @@
 
 export const environment = {
   production: false,
+  useEmulator: false,
   firebase: {
-
+    apiKey: "AIzaSyDODGEJur8UDOFW5gVJjMZqCNf-fM2HHGw",
+    authDomain: "fir-course-recording-aa35c.firebaseapp.com",
+    databaseURL: "https://fir-course-recording-aa35c-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "fir-course-recording-aa35c",
+    storageBucket: "fir-course-recording-aa35c.appspot.com",
+    messagingSenderId: "103457880443",
+    appId: "1:103457880443:web:14d58e7a637c00c57be5de",
+    measurementId: "G-KVRH98H54X"
   },
   api: {
 
